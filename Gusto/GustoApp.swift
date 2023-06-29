@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+// step 3
+import SwiftData
 
 @main
 struct GustoApp: App {
@@ -13,5 +15,7 @@ struct GustoApp: App {
         WindowGroup {
             ContentView()
         }
+        // step 4
+        .modelContainer(for: Restaurant.self)
     }
 }
